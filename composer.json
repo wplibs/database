@@ -1,0 +1,29 @@
+{
+    "name": "wplibs/database",
+    "description": "WordPress database query builder, based on illuminate/database",
+    "type": "library",
+    "license": "MIT",
+    "minimum-stability": "stable",
+    "authors": [
+        {
+            "name": "awethemes",
+            "email": "support@awethemes.com"
+        },
+        {
+            "name": "Nguyen Van Anh",
+            "email": "anhskohbo@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.6.0",
+        "mrjgreen/database": "^2.5"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "4.8.*|5.7.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "WPLibs\\Database\\": "src/"
+        }
+    }
+}
