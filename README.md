@@ -1,13 +1,15 @@
-WordPress Database
+WordPress Database [![Build Status](https://travis-ci.org/wplibs/database.svg?branch=master)](https://travis-ci.org/wplibs/database)
 ==================
 
 ## Installation
 
 ```
-composer require wplibs/database
+composer require wplibs/database:^1.0
 ```
 
-## Basic Example
+## Usage
+
+Basic Example
 
 ```php
 <?php
