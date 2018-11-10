@@ -36,12 +36,13 @@ before_script:
   - |
     if [[ ! -z "$WP_VERSION" ]] ; then
       bash bin/install-wp-tests.sh wordpress_test root '' localhost $WP_VERSION
-      composer install
+      composer global require "phpunit/phpunit=4.8.*|5.7.*"
+      composer install --no-dev --prefer-dist --no-suggest
     fi
 
 script:
   - |
     if [[ ! -z "$WP_VERSION" ]] ; then
-      vendor/bin/phpunit
+      phpunit
       WP_MULTISITE=1 phpunit
     fi
